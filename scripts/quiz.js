@@ -2,7 +2,7 @@ const choiceOptions = document.querySelectorAll(".choice");
 const questionText = document.querySelector("#questionText");
 const countQuestionsTag = document.querySelector("#countQuestions");
 const pointsTag = document.querySelector("#points");
-
+const progressBar = document.querySelector("#progressBar");
 
 let questions = [];
 let questionsSize;
@@ -27,12 +27,18 @@ let questionsCounter = 0;
 generateRandomQuestions = questions => {
     let questionsLength = questions.length;
 
+    //no questions left here
+    if (questionsLength <= 0) {
+        window.location.href = "../pages/results.html";
+    }
+
     if (questionsLength !== 0) {
         questionsCounter++;
     }
 
     countQuestionsTag.innerHTML = `Question ${questionsCounter} of ${questionsSize}`;
-    pointsTag.innerHTML = `${points} Points`
+    pointsTag.innerHTML = `${points} Points`;
+    progressBar.style = `width: ${(questionsCounter / questionsSize) * 100}%`;
 
     //pick a random question
     const index = Math.floor(Math.random() * questionsLength);
