@@ -1,0 +1,102 @@
+[
+    {
+        "category": "Science: Computers",
+        "type": "multiple",
+        "difficulty": "medium",
+        "question": "All of the following programs are classified as raster graphics editors EXCEPT:",
+        "correct_answer": "Inkscape",
+        "available_choices": ["Paint.NET", "Inkscape", "GIMP", "Adobe Photoshop"]
+    },
+    {
+        "category": "Science: Computers",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called:",
+        "correct_answer": "HD Graphics 500",
+        "available_choices": [
+            "HD Graphics 700 ",
+            "HD Graphics 600",
+            "HD Graphics 7000",
+            "HD Graphics 500"
+        ]
+    },
+    {
+        "category": "Science: Computers",
+        "type": "multiple",
+        "difficulty": "medium",
+        "question": "The computer OEM manufacturer Clevo, known for its Sager notebook line, is based in which country?",
+        "correct_answer": "Taiwan",
+        "available_choices": [
+            "Taiwan",
+            "United States",
+            "Germany",
+            "China (People&#039;s Republic of)"
+        ]
+    },
+    {
+        "category": "Science: Computers",
+        "type": "multiple",
+        "difficulty": "medium",
+        "question": "Which of these is the name for the failed key escrow device introduced by the National Security Agency in 1993?",
+        "correct_answer": "Clipper Chip",
+        "available_choices": ["Enigma Machine", "Clipper Chip", "Skipjack", "Nautilus"]
+    },
+    {
+        "category": "Science: Computers",
+        "type": "multiple",
+        "difficulty": "easy",
+        "question": "Which computer language would you associate Django framework with?",
+        "correct_answer": "Python",
+        "available_choices": ["C#", "Python", "C++", "Java"]
+    },
+    {
+        "category": "Science: Computers",
+        "type": "multiple",
+        "difficulty": "medium",
+        "question": "How fast is USB 3.1 Gen 2 theoretically?",
+        "correct_answer": "10 Gb/s",
+        "available_choices": ["5 Gb/s", "8 Gb/s", "10 Gb/s", "1 Gb/s"]
+    },
+    {
+        "category": "Science: Computers",
+        "type": "multiple",
+        "difficulty": "medium",
+        "question": ".rs is the top-level domain for what country?",
+        "correct_answer": "Serbia",
+        "available_choices": ["Romania", "Russia", "Rwanda", "Serbia"]
+    },
+    {
+        "category": "Science: Computers",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "Which of these is not a key value of Agile software development?",
+        "correct_answer": "Comprehensive documentation",
+        "available_choices": [
+            "Individuals and interactions",
+            "Comprehensive documentation",
+            "Customer collaboration",
+            "Responding to change"
+        ]
+    },
+    {
+        "category": "Science: Computers",
+        "type": "multiple",
+        "difficulty": "medium",
+        "question": "What is the main CPU is the Sega Mega Drive / Sega Genesis?",
+        "correct_answer": "Motorola 68000",
+        "available_choices": ["Zilog Z80", "Motorola 68000", "Yamaha YM2612", "Intel 8088"]
+    },
+    {
+        "category": "Science: Computers",
+        "type": "multiple",
+        "difficulty": "medium",
+        "question": "What does the term MIME stand for, in regards to computing?",
+        "correct_answer": "Multipurpose Internet Mail Extensions",
+        "available_choices": [
+            "Mail Internet Mail Exchange",
+            "Multipurpose Interleave Mail Exchange",
+            "Mail Interleave Method Exchange",
+            "Multipurpose Internet Mail Extensions"
+        ]
+    }
+]
