@@ -29,6 +29,8 @@ generateRandomQuestions = questions => {
 
     //no questions left here
     if (questionsLength <= 0) {
+        //save user score in local storage
+        localStorage.setItem("userScore", points);
         window.location.href = "../pages/results.html";
     }
 
