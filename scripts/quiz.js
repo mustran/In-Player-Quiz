@@ -1,8 +1,11 @@
 const choiceOptions = document.querySelectorAll(".choice");
 const questionText = document.querySelector("#questionText");
 const countQuestionsTag = document.querySelector("#countQuestions");
+const pointsTag = document.querySelector("#points");
+
 
 let questions = [];
+let questionsSize;
 //get data
 async function getDataset() {
     let response = await fetch("../data/questions.json");
@@ -12,14 +15,24 @@ async function getDataset() {
 
 getDataset().then(data => {
     questions = data;
+    questionsSize = questions.length;
     generateRandomQuestions(questions);
 });
 
 // we need the correct answer after we randomly pick a question
 let correctAnswer;
 
+let questionsCounter = 0;
+
 generateRandomQuestions = questions => {
     let questionsLength = questions.length;
+
+    if (questionsLength !== 0) {
+        questionsCounter++;
+    }
+
+    countQuestionsTag.innerHTML = `Question ${questionsCounter} of ${questionsSize}`;
+    pointsTag.innerHTML = `${points} Points`
 
     //pick a random question
     const index = Math.floor(Math.random() * questionsLength);
@@ -40,6 +53,8 @@ generateRandomQuestions = questions => {
     console.log(questions);
 };
 
+let points = 0;
+
 choiceOptions.forEach(el => {
     el.addEventListener("click", event => {
         let elementTag = event.target;
@@ -55,6 +70,7 @@ choiceOptions.forEach(el => {
         }
         //animate green color for the correct answer
         else {
+            points += 1;
             elementTag.classList.add("btn-success");
             setTimeout(() => {
                 generateRandomQuestions(questions);
