@@ -1,4 +1,4 @@
-#inPlayer {
+#inPlayer, #result {
     font-family: Lobster;
     font-size: 4rem;
     background-color: #1e3853;
@@ -27,4 +27,8 @@
 
 .choice:hover{
     color: rgb(171, 196, 243);
+}
+
+#score{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

@@ -8,17 +8,33 @@
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>High Scores</title>
+
+    <style>
+        .choice {
+            font-size: 1.1rem;
+            background-color: #1e3853;
+            color: white;
+        }
+
+        .choice:hover {
+            color: rgb(171, 196, 243);
+        }
+
+        .list-group {
+            width: 300px !important;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container p-4 mt-5 d-flex flex-column justify-content-center align-items-center">
         <form class="form-inline">
             <div class="form-group mx-sm-3 mb-2">
                 <label for="username" class="sr-only">Username</label>
                 <input type="text" class="form-control" id="username" placeholder="username" required>
             </div>
-            <button id="submitScore" type="submit" class="btn btn-primary mb-2">Save Score</button>
+            <button id="submitScore" type="submit" class="choice btn mb-2">Save Score</button>
         </form>
         <div class="row" id="scores">
 
