@@ -17,7 +17,7 @@ let userAndScore = {
 displayScoresSorted();
 
 submitScore.addEventListener("click", event => {
-    // event.preventDefault();
+    event.preventDefault();
     userAndScore.username = username.value;
 
     //store the username if it is not empty
